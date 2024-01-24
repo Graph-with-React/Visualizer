@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head>
+  <!-- <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="PrimNode.js"></script>
+  <script src="Prims.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="Prims">
+      <h1> Prims's Visualizer </h1>
+      <div id="copyright"> <b>Created by: </b> <br><br>Wesley Coleman<br> Niko Hildenbrand <br> Nelson Leonardo Gonzalez Dantas </div>
+      <p>This tool will be helpful to visualize the Prims MST Algorithm. While a graph has been provided you can generate a new graph with the number of nodes desired, by writting an input and clicking generate graph.</p>
+      <h3> Instructions </h3>
+      <p> Nodes will be added if you click "Add new node". You can add and update edges by selecting a valid starting and ending node as well as a weight from 1-20 inclusive. Currently there is not way tp delete edges, if you prefer to create your own graph create a graph with 1 node and add from there. Currently the generate graph will generate up to 15 nodes.</p>
+     <div class="graph-input">
+        <div class="input-new-edge">
+          <div class="generate-graph">
+      <h3> Generate graph </h3>
+      <label for="generate_num">Number of Nodes: </label>
+      <input type="text" id="generate_num" name="Generate Num"><br>
+      <button onclick="generate()">Generate Graph</button>
+            </div>
+          <div class="new-edge">
+    </h3><h3> New/Update Edge </h3>
+    <label for="start_node">Starting Node: </label>
+    <input type="text" id="start_node" name="Starting Node"><br>
+    <label for="end_node">Ending Node: </label>
+    <input type="text" id="end_node" name="End node"><br>
+    <label for="weight">New Weight:</label>
+    <input type="text" id="weight" name="Weight"><br>
+      <br>
+    <button onclick="add_new_edge()">Update/Create Edge</button>
+    
+      <br>
+            </div>
+        </div>
+      <div class="addNodes">
+      <h3> Adding Nodes </h3><h3>
+      <script src="sketch.js"></script>
+      <button onclick="add_new_node()">Add new node</button>
+        </div>
+    
+      <div class="get-mst">
+        <h3> Get MST </h3>
+      <button onclick="get_MST()">Get MST</button>
+        <button onclick="printMST()">Next</button>
+        <br>
+        <br>
+      </div>
+     </div>
+     <div class="jscode">
+     <script src="p5.js"></script>
+     <script src="p5.sound.min.js"></script>
+     <script src="PrimNode.js"></script>
+     <script src="Prims.js"></script>
+     <script src="sketch.js"></script>
+    </div>   
+  </div>
+    <!-- <div class="Boruvkas">
+      <h1> Boruvka's Visualizer </h1>
+      <div id="copyright"> <b>Created by: </b> <br><br>Wesley Coleman<br> Niko Hildenbrand <br> Nelson Leonardo Gonzalez Dantas </div>
+      <p>This tool will be helpful to visualize the Prims MST Algorithm. While a graph has been provided you can generate a new graph with the number of nodes desired, by writting an input and clicking generate graph.</p>
+      <h3> Instructions </h3>
+      <p> Nodes will be added if you click "Add new node". You can add and update edges by selecting a valid starting and ending node as well as a weight from 1-20 inclusive. Currently there is not way tp delete edges, if you prefer to create your own graph create a graph with 1 node and add from there. Currently the generate graph will generate up to 15 nodes.</p>
+      <h3> Generate graph </h3>
+      <label for="generate_num">Number of Nodes: </label>
+      <input type="text" id="generate_num" name="Generate Num"><br>
+      <button onclick="generate()">Generate Graph</button>
+      <h3> Adding Nodes </h3><h3>
+      <script src="sketch.js"></script>
+      <button onclick="add_new_node()">Add new node</button>
+      
+      </h3><h3> New/Update Edge </h3>
+      <label for="start_node">Starting Node: </label>
+      <input type="text" id="start_node" name="Starting Node"><br>
+      <label for="end_node">Ending Node: </label>
+      <input type="text" id="end_node" name="End node"><br>
+      <label for="weight">New Weight:</label>
+      <input type="text" id="weight" name="Weight"><br>
+        <br>
+      <button onclick="add_new_edge()">Update/Create Edge</button>
+      
+        <br>
+        <h3> Get MST </h3>
+      <button onclick="get_MST()">Get MST</button>
+        <button onclick="printMST()">Next</button>
+        <br>
+        <br>
+        <script src="sketch.js"></script>
+    </div> -->
+</body></html>
